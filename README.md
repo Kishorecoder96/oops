@@ -1,3 +1,5 @@
+
+
 # SIXTH SENSE
 
 ![logo](https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png)
@@ -222,6 +224,118 @@ The **`ProcessPoolExecutor`** is a high-level interface provided by the concurre
  Conclusion
 
 In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, offers a convenient approach for concurrent task execution in Python, enhancing performance by utilizing multiple CPU cores. By judiciously configuring the executor and task distribution, developers can optimize resource utilization and improve application responsiveness, contributing to efficient parallel processing.
+
+#### Voice Assistant
+
+ **Introduction**
+
+This documentation outlines a Python script for a speech recognition assistant that listens for specific wake words and responds to user speech using text-to-speech conversion. The script utilizes various libraries for speech recognition and audio manipulation.
+
+ **Imports**
+
+The script imports the following libraries:
+
+- **`speech_recognition`** (**`sr`**): Recognizes speech from audio recordings.
+- **`pyaudio`**: Interacts with the computer's audio hardware for recording.
+- **`os`**: Interacts with the operating system.
+- **`time`**: Provides timing functionalities.
+- **`playsound`**: Plays audio files on the system.
+- **`gtts`**: Converts text to speech and saves it as an audio file.
+
+ **GTTS Function**
+
+- **`GTTS(text)`**: Converts text to speech and plays the generated audio using **`playsound`**.
+
+ **get_audio Function**
+
+- **`get_audio()`**: Captures user speech and converts it to text using the **`Recognizer`** instance from **`speech_recognition`**. It listens for audio input from the microphone, records audio, and attempts to recognize the spoken words using Google Speech-to-Text.
+
+ **Main Function**
+
+- **`main()`**: Entry point of the program. Calls **`get_audio()`** to capture and recognize user speech. It then checks if the recognized text contains the wake word "hello". If found, responds with "Hey, how are you?" using **`GTTS`**.
+
+ **Wake Word and Loop**
+
+- **`WAKE = "hello everyone"`**: Defines the wake word that triggers the assistant.
+- The script enters a loop that continuously listens for audio using **`get_audio()`**. If the wake word is detected, the assistant responds and listens for further instructions.
+
+ **Usage**
+
+To use the speech recognition assistant, run the script and wait for the prompt. Speak the wake word "hello everyone" to trigger the assistant, then give instructions or ask questions as needed.
+
+#### Google Calendar API
+
+**Introduction**
+
+This documentation outlines a Python script that integrates with the Google Calendar API to provide virtual assistant functionalities, including accessing calendar events and creating notes using speech recognition and text-to-speech.
+
+**Imports**
+
+- Standard library imports: **`datetime`**, **`pickle`**, **`os`**, **`time`**
+- Google Calendar API imports: **`build`** from **`googleapiclient.discovery`**, **`Credentials`**, and **`InstalledAppFlow`** from **`google_auth_oauthlib.flow`**
+- Speech recognition and Text-to-Speech (TTS) imports: **`sr`** for speech recognition, **`pyttsx3`**, and **`gTTS`** for text-to-speech
+- Other imports: **`playsound`** for playing audio files, **`subprocess`** for opening external applications
+
+**Google Calendar Authentication**
+
+- **`SCOPES`**: Defines the permissions required to access Google Calendar data.
+- **`create_service(client_secret_file, ...)`**: Function to create a service object for interacting with the Google Calendar API. It handles OAuth2 authentication and stores credentials for future use.
+
+ **Helper Functions**
+
+- **`convert_to_RFC_datetime(year, month, day, hour, minute)`**: Converts date and time information to a format compatible with the Google Calendar API.
+- **`speak(text)`**: Converts text to speech and plays the audio using either **`pyttsx3`** or **`gTTS`**.
+
+**Voice Class**
+
+- Provides methods for speech recognition and interaction with the virtual assistant:
+    - **`get_audio()`**: Listens for user input and converts it to text using **`sr`** (SpeechRecognition).
+    - **`authenticate_google()`**: Function for an alternative authentication approach (currently commented out).
+    - **`get_events(day, service)`**: Retrieves calendar events for a specific day using the Google Calendar service object.
+    - **`get_date(text)`**: Parses user's spoken text to extract date information in various formats.
+    - **`note(text)`**: Creates a text file with the provided note text and opens it using **`notepad.exe`** (Windows specific).
+
+ **Main Loop**
+
+- **`WAKE = "hello"`**: Defines the wake word to activate the virtual assistant.
+- **`SERVICE = authenticate_google()`**: Calls the authentication function.
+- The script continuously listens for user input:
+    - Captures user's spoken command.
+    - Processes the command based on keywords related to calendar and note functionalities.
+    - If no matching keywords are found, responds with "I don't understand".
+
+ **Conclusion**
+
+This documentation provides an overview of a Python script that integrates with the Google Calendar API to create a virtual assistant capable of accessing calendar events and creating notes using speech recognition and text-to-speech functionalities.
+
+#### Distance Warning system using Midas 2.1V small
+
+**Introduction:**
+The Depth Estimation module, powered by the MIDAS (Monocular Depth Estimation in Real-Time with Deep Learning on Large-Scale Datasets) model, incorporates a Distance Warning System to assist visually challenged individuals in navigation. This addendum outlines the implementation, benefits, and impact of the distance warning system in conjunction with depth estimation.
+
+**Implementation:**
+The Distance Warning System is integrated into the existing depth estimation workflow. Upon estimating depth from input images using the MIDAS model, the system analyzes the depth map to identify obstacles in proximity. If an object is detected within a predefined threshold distance, the system triggers an alert to warn the individual about the obstacle's presence.
+
+**Benefits of the Distance Warning System:**
+
+1. **Enhanced Safety:** The Distance Warning System enhances safety for visually challenged individuals by providing real-time alerts about nearby obstacles, enabling them to navigate with increased awareness and confidence.
+2. **Independence:** By providing timely warnings, the system promotes independence and autonomy for visually challenged individuals, empowering them to navigate environments with reduced reliance on assistance.
+3. **User-Friendly Interface:** The system offers a user-friendly interface, delivering audible or tactile alerts that are easily perceivable and actionable by individuals with visual impairments.
+
+**Impact and Use Cases:**
+
+1. **Indoor Navigation:** The Distance Warning System facilitates indoor navigation for visually challenged individuals, enabling them to maneuver through spaces such as homes, offices, and public buildings with greater ease and safety.
+2. **Outdoor Mobility:** In outdoor environments, the system assists individuals in navigating sidewalks, pedestrian crossings, and other urban settings, reducing the risk of collisions with obstacles and hazards.
+3. **Public Transportation:** When accessing public transportation services, the system helps individuals locate boarding points, navigate platforms, and avoid obstacles in transit stations.
+
+**Integration with our Sixth Sense:**
+
+The Distance Warning System has been  integrated with our Sixth Sense to provide seamless access and enhanced functionality. By leveraging existing  technologies in Sixth Sense, the system can reach a wider user base and integrate with other accessibility features.
+
+**Conclusion:**
+
+The integration of the Distance Warning System with the Depth Estimation module leveraging the MIDAS model represents a significant advancement in assistive technology for visually challenged individuals. By combining real-time depth estimation with proactive obstacle detection and warning capabilities, the system contributes to improved mobility, independence, and safety in navigating diverse environments.
+
 
 
 
