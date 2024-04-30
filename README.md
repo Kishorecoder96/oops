@@ -1,10 +1,10 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [SIXTH SENSE](#sixth-sense)
-    - [ARCHITECTURE:](#architecture)
-    - [TECHNOLOGY ARSENAL:](#technology-arsenal)
-  - [1 .MACHINE LEARNING:](#1-machine-learning)
+- [Sixth Sense](#sixth-sense)
+    - [Architecture:](#architecture)
+    - [Technology Arsenal:](#technology-arsenal)
+  - [1 .Machine Learning:](#1-machine-learning)
     - [1.1. Optical Character Recognition(OCR)](#11-optical-character-recognitionocr)
     - [1.2. Natural Language Processing(NLP) using Spacy](#12-natural-language-processingnlp-using-spacy)
     - [1.3. Optimisation of Code](#13-optimisation-of-code)
@@ -13,13 +13,13 @@
     - [1.6. Voice Assistant](#16-voice-assistant)
     - [1.7. Google Calendar API](#17-google-calendar-api)
     - [1.8. Distance Warning system using Midas 2.1V small](#18-distance-warning-system-using-midas-21v-small)
-  - [2 SOFTWARE](#2-software)
-    - [2.1 GEOFENCING](#21-geofencing)
+  - [2 Software](#2-software)
+    - [2.1 Geofencing](#21-geofencing)
     - [2.2 Messaging](#22-messaging)
     - [2.3 Multi Language Support](#23-multi-language-support)
     - [Contact](#contact)
-  - [3 HARDWARE](#3-hardware)
-    - [3.1 FALL DETECTION](#31-fall-detection)
+  - [3 Hardware](#3-hardware)
+    - [3.1 Fall Detection](#31-fall-detection)
     - [3.2 **Vibration Motor: Enhancing Safety Measures**](#32-vibration-motor-enhancing-safety-measures)
     - [3.3 TPU (Tensor Processing Unit)](#33-tpu-tensor-processing-unit)
 
@@ -28,16 +28,16 @@
 
 
 
-# SIXTH SENSE
+# Sicth Sense
 
 <div style="text-align: center;">
     <img src="https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png" alt="logo" style="width: 100px; height: 100px;">
 </div>
 
 
-### ARCHITECTURE:
+### Architecture:
 ![Overview Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/archi.png)
-### TECHNOLOGY ARSENAL:
+### Technology Arsenal:
 1. Firebase <img width="30" height="20" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/> - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
 2. React Native <img width="30" height="20" src="https://img.icons8.com/officel/30/react.png" alt="react"/> - App for Caretaker: Cross-platform mobile application framework ensuring a consistent user experience across different devices and operating systems.
 3. Pi OS <img width="30" height="20" src="https://img.icons8.com/color/48/raspberry.png" alt="raspberry"/>- Lightweight and Automation: Optimized operating system for Raspberry Pi devices, conserving resources and enabling automation tasks.
@@ -59,7 +59,7 @@
 19. geopy - it bridges the gap, calculating distances between locations based on their coordinates.
 20. easyocr - it empowers the device to "read" text, converting images of characters to digital text.
 
-## 1 .MACHINE LEARNING:
+## 1 .Machine Learning:
 ### 1.1. Optical Character Recognition(OCR)
 
 **Introduction:**
@@ -327,9 +327,9 @@ The Distance Warning System has been  integrated with our Sixth Sense to provide
 
 The integration of the Distance Warning System with the Depth Estimation module leveraging the MIDAS model represents a significant advancement in assistive technology for visually challenged individuals. By combining real-time depth estimation with proactive obstacle detection and warning capabilities, the system contributes to improved mobility, independence, and safety in navigating diverse environments.
 
-## 2 SOFTWARE
+## 2 Software
 
-### 2.1 GEOFENCING
+### 2.1 Geofencing
 
 Domain
 Mobile App - React Native
@@ -444,8 +444,8 @@ This feature enables blind users (sixth sense users) to make calls to contacts s
 **Enhancements:**
 
 The feature facilitates seamless communication for blind users by leveraging voice commands and advanced hardware capabilities. Future enhancements aim to add more functionalities and improve user interaction, such as adding voice commands for contact saving directly on the sixth sense hardware.
-## 3 HARDWARE
-### 3.1 FALL DETECTION 
+## 3 Hardware
+### 3.1 Fall Detection 
 The MPU-6050 IMU (Inertial Measurement Unit) is a sensor that combines a 3-axis accelerometer and a 3-axis gyroscope. The accelerometer measures gravitational acceleration, while the gyroscope measures rotational velocity. Additionally, this module includes a temperature sensor. It's commonly used for determining the orientation of a moving object.
 
 MPU6050 Pinout:
