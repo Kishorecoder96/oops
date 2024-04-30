@@ -5,8 +5,8 @@
 ### ARCHITECTURE:
 ![Overview Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/archi.png)
 ### TECHNOLOGY ARSENAL:
-1. Firebase  - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
-2. React Native - App for Caretaker: Cross-platform mobile application framework ensuring a consistent user experience across different devices and operating systems.
+1. Firebase <img width="30" height="30" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/> - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
+2. React Native <img width="30" height="30" src="https://img.icons8.com/officel/30/react.png" alt="react"/> - App for Caretaker: Cross-platform mobile application framework ensuring a consistent user experience across different devices and operating systems.
 3. Pi OS - Lightweight and Automation: Optimized operating system for Raspberry Pi devices, conserving resources and enabling automation tasks.
 4. Gemini - Personal Companion: Core intelligence system offering environmental awareness, navigation, alerts, and voice messaging for personalized assistance.
 5. OpenCV - Face Recognition: Utilized for facial recognition functionalities to enhance security and provide personalized assistance.
@@ -362,8 +362,4 @@ In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, o
 
 
 
-## Section 2
-<a name="ML"></a>
-
-This is the content of section 2.
 
