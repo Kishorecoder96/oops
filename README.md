@@ -54,49 +54,9 @@ The OCR module has been integrated with Sixth Sense to enhance its usability and
 **Voice Command Integration:**
 The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
 
-### 1.2. Optical Character Recognition(OCR)
 
-***Introduction:**
-The OCR module is specifically designed to assist visually impaired individuals in accessing textual content from images. Leveraging the EasyOCR library, it provides a user-friendly interface for extracting text from various sources, thereby enhancing accessibility and independence for individuals with visual impairments. 
 
-**Implementation:**
-The OCR module utilizes the EasyOCR library to process images and extract text. It offers a simplified interface for text extraction, requiring minimal user interaction. By leveraging OpenCV for image processing, the module ensures efficient and accurate recognition of textual content from diverse sources, including printed materials, digital documents, and handwritten notes.
-
-**Benefits for Visually Impaired Individuals:**
-
-1. **Accessible Information:** The OCR module enables visually impaired individuals to access textual information from a wide range of sources, including books, documents, labels, and signs, which may otherwise be inaccessible to them.
-2. **Independence:** By providing the ability to extract text independently, the module empowers visually impaired users to access information without relying on sighted assistance, promoting self-reliance and confidence.
-3. **Real-Time Feedback:** With its quick and efficient text extraction capabilities, the module offers real-time feedback, allowing users to instantly access and interact with textual content in their environment.
-4. **Multilingual Support:** Supporting multiple languages, the module caters to the diverse linguistic needs of visually impaired individuals, facilitating access to information in their preferred language.
-
-**Integration with Sixth Sense:**
-The OCR module has been integrated with Sixth Sense to enhance its usability and accessibility for visually impaired users. By leveraging our existing assistive technologies, the module extends its functionality and ensures compatibility with diverse user preferences and needs.
-
-**Voice Command Integration:**
-The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
-
-### Optical Character Recognition(OCR)
-
-***Introduction*:**
-The OCR module is specifically designed to assist visually impaired individuals in accessing textual content from images. Leveraging the EasyOCR library, it provides a user-friendly interface for extracting text from various sources, thereby enhancing accessibility and independence for individuals with visual impairments. 
-
-***Implementation*:**
-The OCR module utilizes the EasyOCR library to process images and extract text. It offers a simplified interface for text extraction, requiring minimal user interaction. By leveraging OpenCV for image processing, the module ensures efficient and accurate recognition of textual content from diverse sources, including printed materials, digital documents, and handwritten notes.
-
-***Benefits for Visually Impaired Individuals*:**
-
-1. **Accessible Information:** The OCR module enables visually impaired individuals to access textual information from a wide range of sources, including books, documents, labels, and signs, which may otherwise be inaccessible to them.
-2. **Independence:** By providing the ability to extract text independently, the module empowers visually impaired users to access information without relying on sighted assistance, promoting self-reliance and confidence.
-3. **Real-Time Feedback:** With its quick and efficient text extraction capabilities, the module offers real-time feedback, allowing users to instantly access and interact with textual content in their environment.
-4. **Multilingual Support:** Supporting multiple languages, the module caters to the diverse linguistic needs of visually impaired individuals, facilitating access to information in their preferred language.
-
-***Integration with Sixth Sense*:**
-The OCR module has been integrated with Sixth Sense to enhance its usability and accessibility for visually impaired users. By leveraging our existing assistive technologies, the module extends its functionality and ensures compatibility with diverse user preferences and needs.
-
-***Voice Command Integration*:**
-The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
-
-###  1.3. Natural Language Processing(NLP) using Spacy
+###  1.2. Natural Language Processing(NLP) using Spacy
 
 **Overview**
 
@@ -118,7 +78,7 @@ This code implements a voice-controlled assistant system that utilizes natural l
 The integration of natural language processing enables intuitive interaction with the voice-controlled assistant system. By interpreting user commands and executing tasks based on the identified actions, the system provides a seamless user experience. Ongoing enhancements and refinements to the NLP model can further improve the accuracy and effectiveness of command interpretation, enhancing the overall usability of the system.
  
  
-### 1.4. Optimisation of Code
+### 1.3. Optimisation of Code
 
  Overview
 
@@ -162,7 +122,7 @@ The refactoring process successfully transformed the initial script-based implem
 
 ---
 
-### 1.5. Gemini
+### 1.4. Gemini
 
  Overview
 
@@ -189,7 +149,7 @@ This documentation outlines the conversion of the original code for optimization
 The conversion of the code for optimization purposes aims to enhance both content size and retrieval speed. By segmenting the code into classes, limiting response length, and introducing streamlined processing, the refactored version achieves better efficiency and performance. Ongoing monitoring and evaluation will ensure continued optimization and responsiveness.
 
 ---
-### 1.6. Multiprocessing using ProcessPoolExecutor
+### 1.5. Multiprocessing using ProcessPoolExecutor
 
  Overview
 
@@ -229,7 +189,7 @@ The **`ProcessPoolExecutor`** is a high-level interface provided by the concurre
 
 In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, offers a convenient approach for concurrent task execution in Python, enhancing performance by utilizing multiple CPU cores. By judiciously configuring the executor and task distribution, developers can optimize resource utilization and improve application responsiveness, contributing to efficient parallel processing.
 
-### 1.7. Voice Assistant
+### 1.6. Voice Assistant
 
  **Introduction**
 
@@ -267,7 +227,7 @@ The script imports the following libraries:
 
 To use the speech recognition assistant, run the script and wait for the prompt. Speak the wake word "hello everyone" to trigger the assistant, then give instructions or ask questions as needed.
 
-### 1.8. Google Calendar API
+### 1.7. Google Calendar API
 
 **Introduction**
 
@@ -312,7 +272,7 @@ This documentation outlines a Python script that integrates with the Google Cale
 
 This documentation provides an overview of a Python script that integrates with the Google Calendar API to create a virtual assistant capable of accessing calendar events and creating notes using speech recognition and text-to-speech functionalities.
 
-### 1.9. Distance Warning system using Midas 2.1V small
+### 1.8. Distance Warning system using Midas 2.1V small
 
 **Introduction:**
 The Depth Estimation module, powered by the MIDAS (Monocular Depth Estimation in Real-Time with Deep Learning on Large-Scale Datasets) model, incorporates a Distance Warning System to assist visually challenged individuals in navigation. This addendum outlines the implementation, benefits, and impact of the distance warning system in conjunction with depth estimation.
@@ -570,6 +530,41 @@ Connecting the vibration motor to a Raspberry Pi or Arduino is relatively straig
 
 In conclusion, vibration motors are invaluable tools for enhancing safety and providing timely notifications in various applications. Whether it's alerting users to obstacles, ensuring their safety, or facilitating caregiver communication, these compact devices offer versatile solutions with minimal intrusion and maximal effectiveness.
 
+### 3.3 TPU (Tensor Processing Unit)
+
+We employ TPU (Tensor Processing Unit) technology to enhance the local execution performance of ML (Machine Learning) Lite models. This implementation not only optimizes the execution speed but also alleviates the computational load on the CPU. This strategic offloading of tasks to the TPU enables us to concurrently run resource-intensive models such as text-to-speech and speech-to-text transformations on the CPU while efficiently managing continuous tasks like object detection on the TPU. This segregation of tasks ensures that each component operates at its peak efficiency, contributing to overall system performance and responsiveness.
+
+[VID-20240421-WA0002 (1).mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/42c421bf-341f-4857-a227-b39907065d71/VID-20240421-WA0002_(1).mp4)
+
+ Requirement
+- Coral TPU
+- Pycoral
+- Tflite-run-time
+- Python ≥3.9.16
+- pyenv
+- picamera2
+- cv2
+
+Setting UP
+
+Setting up my TPU was quite the challenge. It required Python 3.9, but my PiCamera2 needed 3.11, leading me to manage multiple Python versions with pyenv. I faced a dilemma: either downgrade the camera or explore alternatives like pycoral version 3.11 or the TFLite runtime.
+
+Opting for the latter, I first attempted the TFLite runtime, realizing it needed the edge variant. After running edgetup.tflite, my TPU finally started functioning. However, I still desired the functionality of the pycoral library, despite Google discontinuing support in 2019. Integrating it was tricky due to version mismatches, but I stumbled upon a solution by [feranick](https://github.com/feranick/pycoral/releases/tag/v2.0.1TF2.16.1), who had compiled a version compatible with Python 3.11.
+
+After downloading and implementing feranick's version of pycoral, I successfully completed the TPU setup. It was a journey of perseverance, but the end result was worth it.
+
+[VID-20240421-WA0003.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/b6487689-8b85-4f84-9c6a-db9f0b86b4f9/VID-20240421-WA0003.mp4)
+
+ Workflow
+
+We developed our object detection and gesture recognition models as EdgeTPU TFLite models, specifically using uint8 quantization. These models are utilized for object detection; when the system detects a "wrist close" gesture, it activates the object detection function to identify objects. Conversely, when the user opens their wrist, the system stops detecting objects, optimizing resource utilization and response time.
+*Benchmarks**
+
+Different TPU and board benchmark of MobileNet v1 and MobileNet v2 model inference speed.
+
+![Screenshot 2024-04-19 190255.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/ef29a319-2978-4f35-a404-17be350ac356/Screenshot_2024-04-19_190255.png)
+
+Power consumption of different board and coral TPU
 
 
 
