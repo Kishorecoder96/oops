@@ -1,3 +1,30 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [SIXTH SENSE](#sixth-sense)
+    - [ARCHITECTURE:](#architecture)
+    - [TECHNOLOGY ARSENAL:](#technology-arsenal)
+  - [1 .MACHINE LEARNING:](#1-machine-learning)
+    - [1.1. Optical Character Recognition(OCR)](#11-optical-character-recognitionocr)
+    - [1.2. Natural Language Processing(NLP) using Spacy](#12-natural-language-processingnlp-using-spacy)
+    - [1.3. Optimisation of Code](#13-optimisation-of-code)
+    - [1.4. Gemini](#14-gemini)
+    - [1.5. Multiprocessing using ProcessPoolExecutor](#15-multiprocessing-using-processpoolexecutor)
+    - [1.6. Voice Assistant](#16-voice-assistant)
+    - [1.7. Google Calendar API](#17-google-calendar-api)
+    - [1.8. Distance Warning system using Midas 2.1V small](#18-distance-warning-system-using-midas-21v-small)
+  - [2 SOFTWARE](#2-software)
+    - [2.1 GEOFENCING](#21-geofencing)
+    - [2.2 Messaging](#22-messaging)
+    - [2.3 Multi Language Support](#23-multi-language-support)
+    - [Contact](#contact)
+  - [3 HARDWARE](#3-hardware)
+    - [3.1 FALL DETECTION](#31-fall-detection)
+    - [3.2 **Vibration Motor: Enhancing Safety Measures**](#32-vibration-motor-enhancing-safety-measures)
+    - [3.3 TPU (Tensor Processing Unit)](#33-tpu-tensor-processing-unit)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 
