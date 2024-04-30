@@ -71,7 +71,7 @@ The OCR module has been integrated with Sixth Sense to enhance its usability and
 **Voice Command Integration:**
 The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
 
-# Optical Character Recognition(OCR)
+### Optical Character Recognition(OCR)
 
 ***Introduction*:**
 The OCR module is specifically designed to assist visually impaired individuals in accessing textual content from images. Leveraging the EasyOCR library, it provides a user-friendly interface for extracting text from various sources, thereby enhancing accessibility and independence for individuals with visual impairments. 
@@ -225,7 +225,7 @@ The **`ProcessPoolExecutor`** is a high-level interface provided by the concurre
 
 In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, offers a convenient approach for concurrent task execution in Python, enhancing performance by utilizing multiple CPU cores. By judiciously configuring the executor and task distribution, developers can optimize resource utilization and improve application responsiveness, contributing to efficient parallel processing.
 
-#### Voice Assistant
+### Voice Assistant
 
  **Introduction**
 
@@ -263,7 +263,7 @@ The script imports the following libraries:
 
 To use the speech recognition assistant, run the script and wait for the prompt. Speak the wake word "hello everyone" to trigger the assistant, then give instructions or ask questions as needed.
 
-#### Google Calendar API
+### Google Calendar API
 
 **Introduction**
 
@@ -308,7 +308,7 @@ This documentation outlines a Python script that integrates with the Google Cale
 
 This documentation provides an overview of a Python script that integrates with the Google Calendar API to create a virtual assistant capable of accessing calendar events and creating notes using speech recognition and text-to-speech functionalities.
 
-#### Distance Warning system using Midas 2.1V small
+### Distance Warning system using Midas 2.1V small
 
 **Introduction:**
 The Depth Estimation module, powered by the MIDAS (Monocular Depth Estimation in Real-Time with Deep Learning on Large-Scale Datasets) model, incorporates a Distance Warning System to assist visually challenged individuals in navigation. This addendum outlines the implementation, benefits, and impact of the distance warning system in conjunction with depth estimation.
