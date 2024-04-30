@@ -3,7 +3,10 @@
 
 # SIXTH SENSE
 
-![logo](https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png)
+<div style="text-align: center;">
+    <img src="https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png" alt="logo" style="width: 100px; height: 100px;">
+</div>
+
 
 ### ARCHITECTURE:
 ![Overview Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/archi.png)
@@ -29,8 +32,8 @@
 19. geopy - it bridges the gap, calculating distances between locations based on their coordinates.
 20. easyocr - it empowers the device to "read" text, converting images of characters to digital text.
 
-## MACHINE LEARNING:
-### Optical Character Recognition(OCR)
+## 1 .MACHINE LEARNING:
+### 1.1. Optical Character Recognition(OCR)
 
 **Introduction:**
 The OCR module is specifically designed to assist visually impaired individuals in accessing textual content from images. Leveraging the EasyOCR library, it provides a user-friendly interface for extracting text from various sources, thereby enhancing accessibility and independence for individuals with visual impairments. 
@@ -51,7 +54,7 @@ The OCR module has been integrated with Sixth Sense to enhance its usability and
 **Voice Command Integration:**
 The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
 
-### Optical Character Recognition(OCR)
+### 1.2. Optical Character Recognition(OCR)
 
 ***Introduction:**
 The OCR module is specifically designed to assist visually impaired individuals in accessing textual content from images. Leveraging the EasyOCR library, it provides a user-friendly interface for extracting text from various sources, thereby enhancing accessibility and independence for individuals with visual impairments. 
@@ -93,7 +96,7 @@ The OCR module has been integrated with Sixth Sense to enhance its usability and
 ***Voice Command Integration*:**
 The OCR module features voice command integration, allowing visually impaired users to interact with the system using voice commands. Users can issue commands such as "take a picture" to capture an image using the device's camera. Additionally, they can say "extract text from the image" to initiate text extraction using the OCR module.
 
-###  Natural Language Processing(NLP) using Spacy
+###  1.3. Natural Language Processing(NLP) using Spacy
 
 **Overview**
 
@@ -115,7 +118,7 @@ This code implements a voice-controlled assistant system that utilizes natural l
 The integration of natural language processing enables intuitive interaction with the voice-controlled assistant system. By interpreting user commands and executing tasks based on the identified actions, the system provides a seamless user experience. Ongoing enhancements and refinements to the NLP model can further improve the accuracy and effectiveness of command interpretation, enhancing the overall usability of the system.
  
  
-### Optimisation of Code
+### 1.4. Optimisation of Code
 
  Overview
 
@@ -159,7 +162,7 @@ The refactoring process successfully transformed the initial script-based implem
 
 ---
 
-### Gemini
+### 1.5. Gemini
 
  Overview
 
@@ -186,7 +189,7 @@ This documentation outlines the conversion of the original code for optimization
 The conversion of the code for optimization purposes aims to enhance both content size and retrieval speed. By segmenting the code into classes, limiting response length, and introducing streamlined processing, the refactored version achieves better efficiency and performance. Ongoing monitoring and evaluation will ensure continued optimization and responsiveness.
 
 ---
-### Multiprocessing using ProcessPoolExecutor
+### 1.6. Multiprocessing using ProcessPoolExecutor
 
  Overview
 
@@ -226,7 +229,7 @@ The **`ProcessPoolExecutor`** is a high-level interface provided by the concurre
 
 In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, offers a convenient approach for concurrent task execution in Python, enhancing performance by utilizing multiple CPU cores. By judiciously configuring the executor and task distribution, developers can optimize resource utilization and improve application responsiveness, contributing to efficient parallel processing.
 
-### Voice Assistant
+### 1.7. Voice Assistant
 
  **Introduction**
 
@@ -264,7 +267,7 @@ The script imports the following libraries:
 
 To use the speech recognition assistant, run the script and wait for the prompt. Speak the wake word "hello everyone" to trigger the assistant, then give instructions or ask questions as needed.
 
-### Google Calendar API
+### 1.8. Google Calendar API
 
 **Introduction**
 
@@ -309,7 +312,7 @@ This documentation outlines a Python script that integrates with the Google Cale
 
 This documentation provides an overview of a Python script that integrates with the Google Calendar API to create a virtual assistant capable of accessing calendar events and creating notes using speech recognition and text-to-speech functionalities.
 
-### Distance Warning system using Midas 2.1V small
+### 1.9. Distance Warning system using Midas 2.1V small
 
 **Introduction:**
 The Depth Estimation module, powered by the MIDAS (Monocular Depth Estimation in Real-Time with Deep Learning on Large-Scale Datasets) model, incorporates a Distance Warning System to assist visually challenged individuals in navigation. This addendum outlines the implementation, benefits, and impact of the distance warning system in conjunction with depth estimation.
@@ -336,6 +339,371 @@ The Distance Warning System has been  integrated with our Sixth Sense to provide
 **Conclusion:**
 
 The integration of the Distance Warning System with the Depth Estimation module leveraging the MIDAS model represents a significant advancement in assistive technology for visually challenged individuals. By combining real-time depth estimation with proactive obstacle detection and warning capabilities, the system contributes to improved mobility, independence, and safety in navigating diverse environments.
+
+## 2 SOFTWARE
+
+### 2.1 GEOFENCING
+
+Domain
+Mobile App - React Native
+Feature
+In the mobile app the caregiver now have the ability to monitor the blind by setting a circle of radius x position in a map, whenever the the sixth-sense user (blind) leave or move out of the circle the caregiver will receive a alert notification saying the user has left the safezone. this feature allows the caregiver to be alert and proactive even if they are not using the mobile phone thus can improve safety of the blind by taking immediate active and setup.
+ Tech Stack
+
+- React Native
+- React native google map
+- expo-task-manager
+- expo-backgroundfetch
+- firebase
+
+ Working
+
+In geofence page, User have the ability to select location of the circle fence on the map by clicking where they want to, after choosing a position the user will have radius slider this give user ability to increase and decrease the radius of the circle after hitting save this will get stored in firebase. the main logic is comparing the distance from the center of the circle and the sixth sense user location (blind) with the radius of the circle. if the distance is more than the radius then the blind is out of the safe zone else the user is inside the safe zone. the distance is calculated using haversine formula 
+
+ Formula
+
+haversineFormula(center of circle, sixth sense user location) > radius of the circle
+
+### 2.2 Messaging 
+
+Domain
+React native - Mobile App
+**Messaging Feature Overview**
+
+1. **Previous Functionality**: Initially, blind users could send messages using voice commands like "Send Message," which would be sent to the caregiver app.
+2. **Updated Messaging Tab**: Now, there's a dedicated messaging tab within the app where caregivers can type and send messages directly to blind users.
+3. **Text-to-Speech Conversion**: Messages received by blind users are read aloud using machine learning models that convert text to speech specifically tailored for them.
+
+**Tech Stack**
+
+- **React Native**: Used for developing the mobile app, ensuring cross-platform compatibility.
+- **Firebase**: Utilized for real-time data storage and synchronization, specifically for storing messages sent between caregivers and blind users.
+- **File**: Likely used for storing additional data or configurations related to the messaging feature.
+**Working Process**
+
+1. **Caregiver Message Input**: Caregivers have an input field where they can type messages.
+2. **Message Sending**: Once a caregiver sends a message, it is sent to Firebase for storage and synchronization.
+3. **Message Reception by Blind Users**: The Program running on the blind user's device continuously checks the message collection in Firebase for any new messages from caregivers.
+4. **Inbox Handling**: When a new message is received, it's stored in a data structure resembling a Last-In-First-Out (LIFO) queue or stack, essentially creating an inbox for the blind user.
+5. **Message Reading**: When the blind user requests to read messages, the app reads the messages from the inbox in LIFO order, ensuring they hear the most recent message first.
+
+This setup provides an efficient way for caregivers to communicate with blind users using text messages, with the app handling message storage, retrieval, and text-to-speech conversion seamlessly.
+
+### 2.3 Multi Language Support 
+
+---
+
+ Domain
+
+React Native - Mobile App
+
+**Objective:**
+
+Enable caregivers to change the language of the mobile app between Hindi and English, with provisions for adding more languages in the future.
+
+**Tech Stack:**
+
+- React Native
+- i18n-js
+- i18next
+- react-i18next
+
+**Implementation:**
+
+1. **Install Dependencies:** Begin by installing the necessary packages using npm or yarn.
+2. **Setup i18n Configuration:** Create an **`i18n.js`** file to configure i18n, define available languages (e.g., English and Hindi), and set up default and fallback languages.
+3. **Create Language JSON Files:** In a **`locales`** folder, create JSON files for each supported language (e.g., **`en.json`** for English and **`hi.json`** for Hindi) containing key-value pairs for translated strings.
+4. **Implement Language Switching:** In React Native components, use the **`useTranslation`** hook from **`react-i18next`** to access translations. Implement language switch buttons or dropdowns that call **`i18n.changeLanguage`** to switch between languages.
+5. **Testing and Deployment:** Test the language switching functionality thoroughly to ensure translations are displayed correctly based on the selected language. Deploy the app with multi-language support enabled.
+
+**Conclusion:**
+
+By following these steps, caregivers can seamlessly change the language of the React Native mobile app, providing a localized experience for users in Hindi and English, with extensibility to support additional languages in the future.
+
+
+### Contact 
+
+**Domain:**
+
+Raspberry Pi 5 - Hardware and React Native - Mobile App
+
+**Feature:**
+
+This feature enables blind users (sixth sense users) to make calls to contacts stored in a database through a caregiver app using voice commands. The mic detects the command **“Call <Name of the user stored in caregiver app>”**, converts speech to text, and initiates the call via a GSM module, all managed on the sixth sense hardware. The mobile app provides an interface for adding contacts due to the blind user's difficulty in manual entry.
+
+**Tech Stack:**
+
+- React Native
+- Firebase
+- SIM 808 Module
+
+**Future Scope:**
+
+- [ ]  Implementing contact saving functionality on the sixth sense hardware.
+- [ ]  Adding voice commands for blind users to save contacts.
+
+**Working:**
+
+1. **Command Initiation:**
+    - The blind user initiates the call cycle by voicing the command, e.g., **“Call Hursun”**.
+    - A machine learning (ML) model translates the voice command to text.
+2. **Database Lookup:**
+    - The text data is cross-checked against the database to verify if the contact name exists.
+    - If found, the corresponding phone number is retrieved.
+3. **Call Initiation:**
+    - The retrieved phone number is used to initiate a call via the GSM SIM 808 module on the sixth sense hardware.
+    - Multiple functions like call initiation, hang up, and other call-related actions are supported.
+
+**Enhancements:**
+
+The feature facilitates seamless communication for blind users by leveraging voice commands and advanced hardware capabilities. Future enhancements aim to add more functionalities and improve user interaction, such as adding voice commands for contact saving directly on the sixth sense hardware.
+## 3 HARDWARE
+### 3.1 FALL DETECTION 
+The MPU-6050 IMU (Inertial Measurement Unit) is a sensor that combines a 3-axis accelerometer and a 3-axis gyroscope. The accelerometer measures gravitational acceleration, while the gyroscope measures rotational velocity. Additionally, this module includes a temperature sensor. It's commonly used for determining the orientation of a moving object.
+
+MPU6050 Pinout:
+
+| Pin | Function |
+| --- | --- |
+| VCC | Power the sensor (3.3V or 5V) |
+| GND | Ground (Common) |
+| SCL | I2C Clock (A5) |
+| SDA | I2C Data (A4) |
+| XDA | I2C Data for additional sensors |
+| XCL | I2C Clock for additional sensors |
+| AD0 | I2C Address Selection |
+| INT | Interrupt (Indicates new data) |
+| POWER | Power Consumption (3.6mA) |
+
+Connections:
+
+1. Enable I2C on the Raspberry Pi:
+    - Run `sudo raspi-config` in the terminal.
+    - Select `Interfacing Options > I2C`.
+    - Enable the I2C interface and kernel module loading.
+    - Reboot when prompted.
+2. Connect the MPU6050 to the Raspberry Pi:
+    - VCC to 3.3V pin.
+    - GND to Ground.
+    - SDA to SDA pin.
+    - SCL to SCL pin.
+3. Install the MPU6050 library:
+    - Run `sudo apt install python3-smbus` in the terminal.
+    - Run `pip install mpu6050-raspberrypi`.
+
+Code Explanation:
+
+The code sets up serial communication at 9600 baud rate. In the loop function, it reads raw data from the sensor using `mpu_read()`. The raw data is then converted into meaningful values such as acceleration and angular velocity in x, y, and z directions. It calculates the amplitude vector for 3-axis acceleration and checks if it falls below a certain threshold, setting `trigger1` to true if so. If `trigger1` is true, it increments `trigger1count` and checks if the amplitude vector exceeds another threshold, setting `trigger2` to true if so. If `trigger2` is true, it increments `trigger2count` and calculates angular change in x, y, and z directions. If the change is between 80-100 degrees, `trigger3` is set to true. If `trigger3` is true, it increments `trigger3count` and checks if it exceeds a threshold, setting `fall` to true and printing "FALL DETECTED". If `fall` is true, it resets and prints "FALL DETECTED". The code also checks if `trigger1count`, `trigger2count`, and `trigger3count` exceed thresholds and sets corresponding variables to false.
+
+MPU6050 Features:
+
+- MEMS 3-axis accelerometer and 3-axis gyroscope
+- Power Supply: 3-5V
+- Communication: I2C protocol
+- Built-in 16-bit ADC for accuracy
+- Built-in DMP for computational power
+- Can interface with other IIC devices
+- Configurable IIC Address
+- Built-in temperature sensor
+
+Alternatives:
+
+- ADXL335 (3-axis accelerometer)
+- ADXL345 (3-axis accelerometer)
+- MPU9250 (9-axis IMU)
+
+Results:
+
+Using a gyroscope sensor for fall detection shows promising outcomes in accuracy improvement and reduction of false positives and negatives in fall detection systems. By combining accelerometers and gyroscopes, algorithms have been developed to enhance accuracy while minimizing errors.
+
+
+### 3.2 **Vibration Motor: Enhancing Safety Measures**
+
+In the realm of safety measures, the vibration motor emerges as a crucial component to alert users promptly in various scenarios, such as detecting obstacles or receiving notifications from caregivers.
+
+ **Introduction**
+
+Vibration motors are compact devices designed to generate vibrations when powered, making them ideal for alert systems. These motors are particularly useful in situations where audible alarms might not be practical or when users need discreet notifications.
+
+ **Understanding the DC Vibration Motor Module**
+
+**DC Vibration Motor Module:**
+
+!https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/22d3d861-2a2c-445d-b061-b9f8ed3d6cba/Untitled.png
+
+**Key Features:**
+
+- **Operating Voltage (VDC):** 3 ~ 5.3
+- **Motor Diameter:** 10mm
+- **Rated Speed:** 9000 RPM (min)
+- **Rated Voltage (V):** 5
+- **Rated Current:** up to 60 mA
+- **Starting Current:** up to 90 mA
+- **Starting Voltage:** 3.7 VDC
+- **Insulation Resistance:** 10 MΩ
+- **Dimensions (mm):**
+    - Length: 23.5
+    - Width: 21
+    - Height: 8
+- **Weight (g):** 3
+
+ **Application and Usage**
+
+**Alert Systems:**
+
+Vibration motors are commonly used in alert systems to notify users of important events or potential hazards. For instance, in wearable devices or assistive technologies, these motors provide discreet feedback to users without disturbing their surroundings.
+
+ **Safety Measures:**
+
+In safety-critical applications, such as navigation aids for the visually impaired or industrial safety equipment, vibration motors play a vital role in alerting users to obstacles or unsafe conditions.
+
+ **Caregiver Notifications:**
+
+Caregivers can use vibration motors as part of monitoring systems to alert them when their attention is needed. This ensures timely responses to the needs of the person under their care.
+
+**Connecting the Vibration Motor**
+
+Connecting the vibration motor to a Raspberry Pi or Arduino is relatively straightforward. Typically, you'll connect the GND (ground) pin to the ground, the VCC (power) pin to a power source (5V), and the VIN pin to a digital pin for control.
+
+
+ **Conclusion**
+
+In conclusion, vibration motors are invaluable tools for enhancing safety and providing timely notifications in various applications. Whether it's alerting users to obstacles, ensuring their safety, or facilitating caregiver communication, these compact devices offer versatile solutions with minimal intrusion and maximal effectiveness.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
