@@ -1,5 +1,6 @@
 
 
+
 # SIXTH SENSE
 
 ![logo](https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png)
@@ -7,23 +8,23 @@
 ### ARCHITECTURE:
 ![Overview Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/archi.png)
 ### TECHNOLOGY ARSENAL:
-1. Firebase <img width="30" height="30" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/> - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
-2. React Native <img width="30" height="30" src="https://img.icons8.com/officel/30/react.png" alt="react"/> - App for Caretaker: Cross-platform mobile application framework ensuring a consistent user experience across different devices and operating systems.
-3. Pi OS - Lightweight and Automation: Optimized operating system for Raspberry Pi devices, conserving resources and enabling automation tasks.
-4. Gemini - Personal Companion: Core intelligence system offering environmental awareness, navigation, alerts, and voice messaging for personalized assistance.
-5. OpenCV - Face Recognition: Utilized for facial recognition functionalities to enhance security and provide personalized assistance.
+1. Firebase <img width="30" height="20" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/> - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
+2. React Native <img width="30" height="20" src="https://img.icons8.com/officel/30/react.png" alt="react"/> - App for Caretaker: Cross-platform mobile application framework ensuring a consistent user experience across different devices and operating systems.
+3. Pi OS <img width="30" height="20" src="https://img.icons8.com/color/48/raspberry.png" alt="raspberry"/>- Lightweight and Automation: Optimized operating system for Raspberry Pi devices, conserving resources and enabling automation tasks.
+4. Gemini  - Personal Companion: Core intelligence system offering environmental awareness, navigation, alerts, and voice messaging for personalized assistance.
+5. OpenCV <img width="30" height="20" src="https://img.icons8.com/color/48/opencv.png" alt="opencv"/>- Face Recognition: Utilized for facial recognition functionalities to enhance security and provide personalized assistance.
 6. Torch - Speech to Text: Enables voice command interaction through speech-to-text conversion, enhancing accessibility and user experience.
-7. OCR - Extracting Images: Extracts text from images to improve comprehension and facilitate data processing.
-8. Google Maps API - Directions API: Integrates reliable navigation information from Google Maps for safe and efficient travel planning.
-9. Google Calendar API:provide virtual assistant functionalities, including accessing calendar events and creating notes using speech recognition and text-to-speech.
-10. Coral TPU - Accelerated Machine Learning: Integrates Coral TPU for accelerated machine learning tasks, enhancing performance and efficiency.
+7. OCR <img width="30" height="20" src="https://img.icons8.com/material/24/printed-ocr.png" alt="printed-ocr"/>- Extracting Images: Extracts text from images to improve comprehension and facilitate data processing.
+8. Google Maps API <img width="30" height="20" src="https://img.icons8.com/color/48/google-maps-new.png" alt="google-maps-new"/>- Directions API: Integrates reliable navigation information from Google Maps for safe and efficient travel planning.
+9. Google Calendar API <img width="30" height="20" src="https://img.icons8.com/color/48/google-calendar--v2.png" alt="google-calendar--v2"/>:provide virtual assistant functionalities, including accessing calendar events and creating notes using speech recognition and text-to-speech.
+10. Coral TPU <img width="30" height="20" src="https://img.icons8.com/office/30/coral.png" alt="coral"/>- Accelerated Machine Learning: Integrates Coral TPU for accelerated machine learning tasks, enhancing performance and efficiency.
 11. TensorFlow Lite - Lightweight Machine Learning: Utilizes TensorFlow Lite for deploying machine learning models on resource-constrained devices, optimizing performance on edge devices.
-12. MediaPipe- MediaPipe is chosen for its real-time hand tracking and gesture recognition capabilities, allowing the device to understand hand movements and translate them into action
-13. Google Speech-To-Text -  converts speech to text for situations where an internet connection allows real-time processing for greater accuracy and features. 
-14. Whisper Speech-To-Text - For offline use, our device employs a built-in speech recognition model for real-time speech-to-text conversion, ensuring functionality without an internet connection
+12. MediaPipe - MediaPipe is chosen for its real-time hand tracking and gesture recognition capabilities, allowing the device to understand hand movements and translate them into action
+13. Google Speech-To-Text <img width="30" height="20" src="https://img.icons8.com/ios-glyphs/30/speech-to-text.png" alt="speech-to-text"/>-  converts speech to text for situations where an internet connection allows real-time processing for greater accuracy and features. 
+14. Whisper Speech-To-Text <img width="30" height="20" src="https://img.icons8.com/ios-filled/50/whisper.png" alt="whisper"/> - For offline use, our device employs a built-in speech recognition model for real-time speech-to-text conversion, ensuring functionality without an internet connection
 15. pyttsx3 - converts text to speech on your device itself (locally), providing voice feedback without needing an internet connection. 
 16. langchain -  acts as a bridge, smoothing communication between the user and Gemini. It refines the questions and requests for optimal understanding by the large language model.
-17. Face-Recognition - it recognizes faces, helping identify people visually imapired individual meet.
+17. Face-Recognition <img width="30" height="20" src="https://img.icons8.com/external-flat-circular-vectorslab/68/external-Face-Recognition-interior-flat-circular-vectorslab.png" alt="external-Face-Recognition-interior-flat-circular-vectorslab"/>- it recognizes faces, helping identify people visually imapired individual meet.
 18. pyaudio - it acts as a microphone, capturing spoken words for the device to understand.
 19. geopy - it bridges the gap, calculating distances between locations based on their coordinates.
 20. easyocr - it empowers the device to "read" text, converting images of characters to digital text.
@@ -199,7 +200,7 @@ The **`ProcessPoolExecutor`** is a high-level interface provided by the concurre
 
 1. **Initialization**:
     - The **`ProcessPoolExecutor`** is initialized with the desired maximum number of worker processes (**`max_workers`**).
-    - `with ProcessPoolExecutor(max_workers=2) as ex:`
+    - `with ProcessPoolExecutor(max_workers=2) as ex:`
 2. **Submit Tasks**:
     - Tasks or functions are submitted for execution using the **`submit`** method.
     - `future1 = ex.submit(object_Detection) future = ex.submit(hi)`
@@ -335,6 +336,7 @@ The Distance Warning System has been  integrated with our Sixth Sense to provide
 **Conclusion:**
 
 The integration of the Distance Warning System with the Depth Estimation module leveraging the MIDAS model represents a significant advancement in assistive technology for visually challenged individuals. By combining real-time depth estimation with proactive obstacle detection and warning capabilities, the system contributes to improved mobility, independence, and safety in navigating diverse environments.
+
 
 
 
