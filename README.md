@@ -34,11 +34,50 @@
     <img src="https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png" alt="logo" style="width: 100px; height: 100px;">
 </div>
 
+![sixth sense](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/sixth%20sense.png)
 #### Generations:
 ![geberation](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Logo.png)
 
 
 ### Architecture:
+# Architecture
+
+The hardware architecture consist of 
+
+- Raspberry Pi 5
+- Pi Camera 2 module
+- Sim 7600X G-H Raspberry Pi hat module
+- Coral USB Accelerator  TPU (Tensor Processing Unit)
+- USB to Aux for headphone
+- Gyroscope (Mpu6050)
+- Vibration Motor
+- 3D Model to house all the components
+
+
+
+
+
+## Hardware Connectivity
+The diagram illustrates the connectivity of various sensors and modules to the Raspberry Pi 5. Notably, the Coral TPU and earphones are connected to the Pi's USB port, while the SIM7600 for network connectivity utilizes both UART and USB for bidirectional communication. This setup ensures robust network connectivity and seamless data exchange.
+
+The gyroscope employs the I2C interface for communication with the Raspberry Pi, offering precise motion sensing capabilities. Meanwhile, the camera is linked to the Pi via PCIe, facilitating high-speed data transfer and enabling advanced imaging functionalities.
+
+Additionally, the vibration module interfaces with the Pi's GPIO pins, allowing for tactile feedback and enhancing user interaction. This comprehensive integration of diverse communication protocols and interfaces optimizes the Raspberry Pi 5's functionality across various domains.
+
+## Challenges Faced
+
+1. We attempted to utilize the M.2 Coral TPU A+E Key (https://coral.ai/products/m2-accelerator-ae) in conjunction with the Pineberry Hat AI (https://pineboards.io/products/hat-ai-for-raspberry-pi-5) as an interface between the TPU and Raspberry Pi. Despite investing over 100 hours in configuration and setup, the Coral TPU failed to register as connected. We made multiple adjustments to the Debian OS configuration file, but the TPU remained undetected in the PCIe channel.
+During startup, an error concerning the MSI PCIe Address was also encountered. After exhaustive troubleshooting attempts, we concluded that the M.2 Coral TPU A+E Key might be faulty. Consequently, we reverted to using the USB Coral TPU, which was already in our possession and functioned seamlessly.
+
+1. Setting up the TPU software for Raspberry Pi presented its own set of challenges, especially considering Google's discontinuation of support since 2019. The PyCoral library, a critical component, was compatible only with Python version 3.9. However, the Picamera2 Python library, essential for camera operations, required Python version 3.11. This compatibility conflict made it impossible to run both libraries simultaneously.
+**Solution**: After extensive research and a night of troubleshooting, we discovered multiple open-source contributions that addressed this issue. These contributions enabled the PyCoral library to function seamlessly on Python version 3.11 and also provided an updated TensorFlow Lite runtime that supported the specific PyCoral version. This breakthrough not only resolved the compatibility hurdles but also ensured smooth integration and operation of the TPU software on the Raspberry Pi.
+2. Initially, obtaining internet connectivity posed a challenge when using the GSM Module. We opted for the Sim 808 Module, which not only facilitated calling, receiving messages, and establishing network connectivity but also offered GPS functionality. However, we encountered limitations with only 2G network access, resulting in sluggish responses from the Gemini API and speech recognition processes.
+    
+    **SIM 808 Module**
+    
+    **Solution:** To address this, we switched to the Sim7600X G-H Raspberry Pi Hat. This alternative not only integrated GPS capabilities but also provided 4G LTE internet connectivity for the Raspberry Pi 5. This upgrade significantly enhanced our system's responsiveness to cloud models, ensuring smoother and faster operations.
+    
+    
 #### Old Architecture
 ![Old Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Old%20architecture%20(2).png)
 #### New Architecture
@@ -188,7 +227,7 @@ The conversion of the code for optimization purposes aims to enhance both conten
  Overview
 
 The multiprocessing library in Python provides support for parallelizing tasks across multiple CPU cores or processes. It offers several classes and functions to create and manage concurrent processes, improving efficiency and performance in multiprocessing environments.
-
+![threading](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/threading.png)
  ProcessPoolExecutor
 
 The **`ProcessPoolExecutor`** is a high-level interface provided by the concurrent.futures module, built on top of the multiprocessing library. It enables concurrent execution of multiple tasks or functions within separate processes, allowing for parallelism and efficient resource utilization.
@@ -228,7 +267,7 @@ In summary, the multiprocessing library, coupled with the ProcessPoolExecutor, o
  **Introduction**
 
 This documentation outlines a Python script for a speech recognition assistant that listens for specific wake words and responds to user speech using text-to-speech conversion. The script utilizes various libraries for speech recognition and audio manipulation.
-
+![speech to speech](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/speech%20to%20speech.png)
  **Imports**
 
 The script imports the following libraries:
@@ -336,6 +375,8 @@ The integration of the Distance Warning System with the Depth Estimation module 
 
 ## 2 Software
 
+![caregiver app](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/threading.png)
+
 ### 2.1 Geofencing
 
 Domain
@@ -367,7 +408,7 @@ React native - Mobile App
 1. **Previous Functionality**: Initially, blind users could send messages using voice commands like "Send Message," which would be sent to the caregiver app.
 2. **Updated Messaging Tab**: Now, there's a dedicated messaging tab within the app where caregivers can type and send messages directly to blind users.
 3. **Text-to-Speech Conversion**: Messages received by blind users are read aloud using machine learning models that convert text to speech specifically tailored for them.
-
+4. ![message](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Message.png)
 **Tech Stack**
 
 - **React Native**: Used for developing the mobile app, ensuring cross-platform compatibility.
@@ -453,6 +494,7 @@ This feature enables blind users (sixth sense users) to make calls to contacts s
 The feature facilitates seamless communication for blind users by leveraging voice commands and advanced hardware capabilities. Future enhancements aim to add more functionalities and improve user interaction, such as adding voice commands for contact saving directly on the sixth sense hardware.
 ## 3 Hardware
 ### 3.1 Fall Detection 
+![](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/alert.png)
 The MPU-6050 IMU (Inertial Measurement Unit) is a sensor that combines a 3-axis accelerometer and a 3-axis gyroscope. The accelerometer measures gravitational acceleration, while the gyroscope measures rotational velocity. Additionally, this module includes a temperature sensor. It's commonly used for determining the orientation of a moving object.
 
 MPU6050 Pinout:
@@ -521,9 +563,9 @@ Vibration motors are compact devices designed to generate vibrations when powere
 
  **Understanding the DC Vibration Motor Module**
 
-**DC Vibration Motor Module:**
 
-!https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/22d3d861-2a2c-445d-b061-b9f8ed3d6cba/Untitled.png
+
+
 
 **Key Features:**
 
@@ -568,7 +610,6 @@ In conclusion, vibration motors are invaluable tools for enhancing safety and pr
 
 We employ TPU (Tensor Processing Unit) technology to enhance the local execution performance of ML (Machine Learning) Lite models. This implementation not only optimizes the execution speed but also alleviates the computational load on the CPU. This strategic offloading of tasks to the TPU enables us to concurrently run resource-intensive models such as text-to-speech and speech-to-text transformations on the CPU while efficiently managing continuous tasks like object detection on the TPU. This segregation of tasks ensures that each component operates at its peak efficiency, contributing to overall system performance and responsiveness.
 
-[VID-20240421-WA0002 (1).mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/42c421bf-341f-4857-a227-b39907065d71/VID-20240421-WA0002_(1).mp4)
 
  Requirement
 - Coral TPU
@@ -587,7 +628,7 @@ Opting for the latter, I first attempted the TFLite runtime, realizing it needed
 
 After downloading and implementing feranick's version of pycoral, I successfully completed the TPU setup. It was a journey of perseverance, but the end result was worth it.
 
-[VID-20240421-WA0003.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/b6487689-8b85-4f84-9c6a-db9f0b86b4f9/VID-20240421-WA0003.mp4)
+
 
  Workflow
 
@@ -596,6 +637,7 @@ We developed our object detection and gesture recognition models as EdgeTPU TFLi
 
 Different TPU and board benchmark of MobileNet v1 and MobileNet v2 model inference speed.
 
-![Screenshot 2024-04-19 190255.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3238531e-95d2-4740-a2cf-a5ee198b2e16/ef29a319-2978-4f35-a404-17be350ac356/Screenshot_2024-04-19_190255.png)
+
 
 Power consumption of different board and coral TPU
+
