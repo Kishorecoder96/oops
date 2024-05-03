@@ -34,12 +34,14 @@
     <img src="https://github.com/Kishorecoder96/sixth-_sense/blob/main/logo.png" alt="logo" style="width: 100px; height: 100px;">
 </div>
 
-![](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Logo.png)
+#### Generations:
+![geberation](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Logo.png)
 
 
 ### Architecture:
-![Old Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/archi.png)
-
+#### Old Architecture
+![Old Archictecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/Old%20architecture%20(2).png)
+#### New Architecture
 ![New Architecture](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/New%20architecture.png)
 ### Technology Arsenal:
 1. Firebase <img width="30" height="20" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/> - Infrastructure and Security: Provides a reliable and scalable backend with built-in security features for data management and user authentication.
@@ -159,6 +161,7 @@ The refactoring process successfully transformed the initial script-based implem
 
 This documentation outlines the conversion of the original code for optimization purposes, focusing on reducing content size and improving retrieval speed. The primary objectives of this conversion are to streamline the codebase, minimize redundant operations, and enhance overall performance.
 
+![](https://github.com/Kishorecoder96/sixth-_sense/blob/main/Mobile_app/assets/images/gdsc/gemini%20pro%20gemma.png)
  Changes Made
 
 1. **Class Segmentation**:
